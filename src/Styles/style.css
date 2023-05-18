@@ -1,0 +1,744 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0 ;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: #fff;
+   color: #000;
+   font-size: 40px;
+   line-height: 1.5;
+}
+
+a {
+   color: #262626;
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-left: 150px;
+   padding-right: 150px;
+ }
+ 
+ .align-sections {
+   flex: 1 1 33%;
+   padding: 20px;
+   text-align: center;
+ }
+
+
+
+/* Navigation */
+
+.main-nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 150px;
+   padding:20px 0;
+   font-size: 20px;
+   font-family:fantasy; 
+} 
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.logo {
+   width: 175px;
+   height: auto;
+   
+}
+
+.main-nav ul{
+   display: flex;
+}
+
+.main-nav ul li {
+   padding:0 20px;
+}
+
+.main-nav ul li a:hover {
+   border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+   flex: 1;
+   margin-left : 20px
+} 
+
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+ 
+}
+
+.search-container input[type=text] {
+  width: 100%;
+  margin: 8px 0;
+  padding-left: 5px;
+} 
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 15px;
+
+}
+
+.search-icon i {
+  font-size: 20px;
+  color: #bbb;
+}
+
+.search-icon:hover i {
+  color: #333;
+}
+
+.menu-button {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
+/*showcase*/
+
+.showcase {
+   width: 100%;
+   height: 700px;
+   background-size: contain;
+   background-position: center;
+   background: url('../img/jalikitchen.jpg') no-repeat center center/cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 300px
+
+} 
+
+.showcase h2 {
+   margin-top: 100px;
+   color:#fff;
+   font-family:cursive;
+   font-size: 75px;
+} 
+
+
+
+/*Gardening posts card */
+
+.post-container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+ }
+ 
+ .card {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+ }
+ 
+ .card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 5px 5px 0 0;
+ }
+
+ .card-description {
+   padding: 10px;
+   flex: 1;
+ }
+ 
+ .card-description h2 {
+   margin-top: 0;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 28px;
+   text-align: center;
+  
+ }
+
+ .card-description p{
+   font-family: 'Handlee', cursive;
+   line-height: 1.5;
+   font-size: 20px;
+
+ }
+ .card-read-more {
+   padding: 5px 10px;
+   background-color: #007bff;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+   margin-top: auto;
+   font-size: 15px;
+   width: 110px;
+   margin-left: 80px;
+
+ }
+ 
+ .card-read-more:hover {
+   background-color: #0062cc;
+ }
+ .card-read-more:hover i {
+   margin-left:5px;
+ }
+
+
+/* harvest cards*/
+
+.subHeading1 {
+   margin-top: 30px;
+   margin-bottom: 40px;
+   font-family: cursive;
+   font-size: 30px;
+   color: #013220;
+   align-content: center;
+  
+}
+
+.harvest-cards{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 5px;
+}
+
+
+.harvestImage {
+  height: 270px;
+  width: 90%;
+}
+
+.pot{
+   padding-top: 15px;
+}
+
+
+/*footer*/
+
+footer{
+   padding:10px;
+   margin-top: 10px;
+   
+   background-color:#013220;
+  
+   
+}
+
+.copyright{
+  color:#f4f4f4;
+  font-family: fantasy;
+   font-size: 15px;
+   text-align: end;
+   padding-top: 15px;
+
+}
+.socialmain {
+ 
+
+  text-align: end;
+
+}
+
+.social {
+  width: 30px;
+   height: auto;
+}
+
+/* contact us form */
+.contact-container{
+   padding-left: 200px;
+   padding-right: 200px;
+}
+
+.contact{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  
+}
+label, input, textarea, button {
+   display: block;
+   margin-bottom: 0;
+ }
+ 
+ label{
+   display: inline-block;
+   font-family:'Poppins', sans-serif;
+   font-size: 25px;
+   
+ }
+
+ input{
+   padding-top: 0;
+   width: 40%;
+   height: 30px;
+
+ }
+
+ textarea {
+   width: 40%;
+   height: 150px;
+   margin-bottom: 0;
+ }
+
+.button1{
+   height: 38px;
+   background:#013220;
+   border:0;
+   padding-left: 20px;
+   padding-right: 20px;
+   color: #ffffff;
+   cursor: pointer;
+} 
+
+input::placeholder {
+  padding-left: 15px;
+}
+
+/*contact page*/
+.Contacttitle h1 {
+   color:#013220;
+   font-family: cursive;
+   font-size: 75px; 
+   padding-bottom: 20px;    
+
+}
+.Contacttitle p {
+   color: #404040;
+   font-family: 'Handlee', cursive;
+   font-weight: 400;
+   line-height: 1.5;
+   font-size: 25px;
+}
+.Contacttitle a:hover {
+   border-bottom: 2px solid #262626;
+}
+
+/* about me */
+.aboutme-container{
+   padding-left: 200px;
+   padding-right: 200px;
+}
+.abouttitle h1 {
+   color:#013220;
+   font-family: cursive;
+   font-size: 75px;  
+   padding-bottom: 20px;
+}
+
+.img-container1{
+   display:grid;
+   grid-template-columns: 1fr 2fr;
+   grid-gap: 20px;
+} 
+.img-container1 img {
+   width: 100%;
+ } 
+.text-container p {
+   color: #404040;
+   font-family: 'Handlee', cursive;
+   font-weight: 400;
+   line-height: 2;
+   font-size: 20px;
+}
+.text-container2 p {
+   padding-top: 20px;
+   color: #404040;
+   font-family: 'Handlee', cursive;
+   font-weight: 400;
+   line-height: 2;
+   font-size: 20px;
+}
+
+ .text-container2{
+   display:grid;
+   grid-template-columns: 2fr 2fr;
+   grid-gap: 20px;
+} 
+
+.img-container2 img {
+   width: 100%;
+ } 
+
+ /*blogs*/
+ .blog {
+   width: 90%;
+   margin: 50px auto 30px;
+
+ }
+.blog header p {
+   font-family: 'Times New Roman', Times, serif;
+  
+}
+
+  
+
+ .author {
+  
+      font-weight: bold;
+      color:#013220;
+      font-family: cursive;
+   }
+   .meta{
+    padding-bottom: 10px;
+   }
+   
+   time {
+      font-weight: bold;
+      color:#013220;
+      font-family: cursive;
+      
+   }
+
+ .blog h2{
+   color:#013220;
+   font-family: cursive;
+   font-size: 75px; 
+   
+ }
+
+ .blog h3{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   border-top: 3px double #000;
+   border-bottom: 3px double #000;
+
+ }
+
+ 
+
+
+ .blog h4{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+ }
+ 
+ .blog h5{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+ }
+
+ .blog p{
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+   /*opacity: 0.9;*/
+   
+ }
+
+ .blog img{
+   width: 100%;
+   max-height: 800px;
+   height: auto;
+ } 
+
+
+ /* gallery */
+.gallerytitle h1{
+   color:#013220;
+   font-family: cursive;
+   font-size: 75px;  
+   padding-bottom: 30px;
+
+}
+.gallery-container{
+   padding-left: 200px;
+   padding-right: 200px;
+}
+
+/*Gallery slide show */
+/* Slideshow container */
+.slideshow-container {
+   max-width: 1100px;
+   position: relative;
+   margin: auto;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+display: none;
+}
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 75px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+color: #f2f2f2;
+font-size: 40px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+ }
+ 
+ /* Number text (1/9 etc) */
+ .numbertext {
+color: #f2f2f2;
+font-size: 40px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+background-color: #717171;
+ }
+ 
+ /* Fading animation */
+ .fade {
+animation-name: fade;
+animation-duration: 1.5s;
+ }
+ 
+ @keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+ } 
+
+ .slideshow-container img {
+max-width: 100%;
+height: 750px;
+object-fit: cover;
+ }
+
+ /* Responsive page*/
+
+ @media (max-width:700px){
+.menu-button {
+  display: block;
+  padding-right:100px;
+  padding-top: 60px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.menu-button:hover{
+  opacity: 0.5;
+}
+.container {
+
+padding-right: 100px;
+padding-left: 100px;
+}
+
+.main-nav ul.main-menu {
+display : block;
+position: absolute;
+top:0;
+left: 0;
+background: #f2f2f2;
+width: 40%;
+height: 100%;
+border-right:#ccc 1px solid;
+opacity:0.7;
+transform: translateX(-500px);
+padding-top: 20px;
+transition: transform 0.5s ease-in-out;
+cursor: pointer;
+
+}
+
+.main-nav ul.main-menu li {
+
+  padding: 10px;
+  border-bottom: #ccc solid 1px;
+  font-size: 20px;
+}
+
+.main-nav ul.main-menu li:last-child {
+  border-bottom:0;
+} 
+
+.main-nav ul.main-menu.show {
+
+  transform: translateX(-50px);
+}
+
+
+   .post-container{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .subHeading1{
+      text-align: center;
+   }
+   .harvest-cards {
+      grid-template-columns: repeat(1,1fr);
+
+   }
+  .main-nav ul.search-menu{
+ padding-right: 70px;
+  padding-top: 35px;
+  }
+
+  .search-icon{
+    padding-left: 20px;
+  }
+  
+  .search-container input[type=text] {
+    padding-left: 3px;
+
+    
+  }
+  .card-read-more{
+    
+    text-align: center;
+  }
+ 
+ .copyright{
+   text-align: center;
+}
+.socialmain {
+  text-align: center;
+}
+.recipeCard-container {
+  grid-template-columns: repeat(2,1fr);
+
+}
+  
+ }
+
+
+
+ /*Recipe page*/
+
+ .recipe-container{
+   padding-left: 200px;
+   padding-right: 200px;
+ }
+
+
+ .recipeCard-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, auto);
+   grid-gap: 75px;
+   padding-top: 30px;
+  
+ }
+ .recipe-header h2{
+  color:#013220;
+   font-family: cursive;
+   font-size: 75px; 
+  text-align: left;
+ }
+
+ /*Paneer Korma*/
+ #photo {
+   font-size: 20px;
+   font-style: italic;
+   color: #888;
+   text-align: end;
+   
+ }
+
+ .instructions {
+   margin-bottom: 40px;
+ }
+
+ .ingredients {
+   margin-bottom: 20px;
+ }
+ 
+ .ingredients h4{
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 5px;
+  font-size: 30px;
+ }
+
+ .instructions h4{
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.ingredients ul {
+   list-style-type:disc;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   font-size: 24px;
+ }
+
+ .ingredients li {
+   margin-bottom: 10px;
+   
+ }
+
+ .instructions ol {
+   list-style-type:decimal;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   font-size: 24px;
+ }

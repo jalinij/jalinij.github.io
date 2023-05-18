@@ -1,13 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles/style.css" />
+            <!--Handlee font-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+            <!--Poppins font -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+            <!--icon-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <title>Jali's Kitchen Garden</title>
+
+
+      </head>
+
 <body>
-    <h1>hello world</h1>
-    <p> Testing </p>
+   <div class = "menu-button"> 
+      <i class = "fas fa-bars "></i>
+   </div>
+   <div class="container">
+      <div class = "align-sections">
+   <header>
+
+      <!-- Navigation -->
+      <nav class = "main-nav">
+         <a href="contact.html"target="_blank">
+            <img src="img/Logo.png" alt="Jalini" class="logo">
+
+         <ul class = "main-menu">
+            <li><a href="index.html"target="_blank">Home</a></li>
+            <li><a href="recipes.html"target="_blank">Recipes</a></li>
+            <li><a href="aboutme.html"target="_blank">About me</a></li>
+            <li><a href="gallery.html"target="_blank">Gallery</a></li>
+            <li><a href="contact.html"target="_blank">Contact</a></li>
+         </ul>
+         <ul class="search-menu">
+            <li> 
+                  <div class="search-container">
+                     <input type="text" placeholder="Search...">
+                     <button class="search-icon">
+                     <i class="fa fa-search"></i>
+                     </button>
+                </div>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   </div>
+
+<main>
+   <section>
+      <!--Showcase image-->
+   <div class="align-sections">
+      <header>
+         <div class="showcase">
+             <h2>Welcome to Jali's Kitchen Garden</h2>
+          </div>   
+      </header>
+   </div>
+</section>
+
+<section>
+      <!--Gardening posts -->
+      <div class="align-sections">
+      <header class = "subHeading1">
+         <h2> Gardening Posts </h2>
+      </header>
+      
+
+      <section class="post-container">
+         <div class="card">
+           <img src="img/gardenbook.png" alt="Card Image">
+           <div class="card-description">
+             <h2>My favourite gardening books</h2>
+             <p>I have selected my favourite and most used books to help you on your journey </p>
+            </div>
+             <a href="My favorite gardening books.html" target="_blank" class="card-read-more">Read More <i class="fas fa-chevron-right"> </i></a>
+           
+         </div>
+         <div class="card">
+           <img src="img/Gardenpeace.jpg" alt="Card Image">
+           <div class="card-description">
+             <h2> Plants help </h2>  <h2> ease the mind</h2>
+             <p>Plants help us feel more calm and relaxed, thus decreasing levels of anxiety </p>
+            </div>
+             <a href="Plants help ease the mind.html" target="_blank"class="card-read-more">Read More <i class="fas fa-chevron-right"> </i> </a>
+           
+         </div>
+         <div class="card">
+           <img src="img/Home potting.jpg" alt="Card Image">
+           <div class="card-description">
+             <h2>What to plant</h2> <h2> in May</h2>
+             <p>In May, all risk of frost has passed in most regions of the UK. </p>
+            </div>
+             <a href="What to plant in May.html"  target="_blank" class="card-read-more">Read More <i class="fas fa-chevron-right"> </i> </a>
+           
+         </div>
+         <div class="card">
+           <img src="img/Raised bed.jpg" alt="Card Image">
+           <div class="card-description">
+             <h2> How to make </h2> <h2> a raised bed</h2>
+             <p>Raised beds are a popular  way to create a thriving vegetable or herb garden </p>
+            </div>
+             <a href="How to make a raised bed.html"  target="_blank" class="card-read-more">Read More <i class="fas fa-chevron-right"> </i></a>
+           
+         </div>
+      
+   </div>
+</section>
+<section>
+      <!--harvest section -->
+      <div class="align-sections">
+
+      <header class = "subHeading1">
+         <h2> Today's Harvest</h2>
+      </header>
+         <div class = "harvest-cards">
+            
+            <div>
+             <img src="img/Jali's Image2.jpg" alt="HarvestImage" class="harvestImage">
+           </div>
+           <div>
+             <img src="img/SpinachJJ.jpg" alt="HomeImage" class="harvestImage">
+           </div>
+           <div>
+             <img src="img/TomatoScale.jpg" alt="HomeImage" class="harvestImage">
+           </div>
+
+         </div> 
+         </div>
+      </section>
+      </div>
+
+
+</main>
+
+<script>
+   document.querySelector('.menu-button').addEventListener
+   ('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+</script>
+<script>
+   // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
+
+<footer> 
+    <div class="footer-container" >
+     <div class="copyright">
+      <p>Copyright &copy; 2023, Jali's Kitchen Garden</p> 
+     </div>
+
+     <div class=" socialmain">
+      <a href="https://facebook.com"target="_blank">
+      <img src="img/icons8-facebook.svg" alt="Jalini" class="social">
+     </a>
+      <a href="https://instagram.com"target="_blank">
+      <img src="img/icons8-instagram-48.png" alt="Jalini" class="social">
+       </a>
+      <a href="https://outlook.com"target="_blank">
+      <img src="img/icons8-email-48.png" alt="Jalini" class="social">
+       </a>
+     </div>
+   </div>
+
+ </footer>
+
 </html>
