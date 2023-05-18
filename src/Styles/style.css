@@ -581,6 +581,7 @@ object-fit: cover;
   padding-top: 60px;
   opacity: 0.8;
   cursor: pointer;
+  font-weight: bold;
 }
 .menu-button:hover{
   opacity: 0.5;
