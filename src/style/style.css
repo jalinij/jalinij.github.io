@@ -206,7 +206,13 @@ ul {
    /*margin-left: 80px;*/
 
  }
- 
+ .read-more-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+ }
+
  .card-read-more:hover {
    background-color: #0062cc;
  }
